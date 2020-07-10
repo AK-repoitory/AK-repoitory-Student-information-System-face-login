@@ -1,0 +1,107 @@
+{% extends 'basic.html' %}
+{% block titles %} Sky High {% endblock %}
+{% block contactactive %} active {% endblock contactactive %}
+{% block downloaddisabled %}
+
+{% if user.is_authenticated %}
+{% else %}
+disabled
+
+{% endif %}
+{% endblock downloaddisabled %}
+{% block stylesheet %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+{% endblock%}
+
+{% block body %}
+<br>
+<div class="container" style="background-color:#F2900F">
+  <br>
+    <h3>Contact Admin</h3>
+<form  method="post" action="{% url 'contact' %}">
+    {% csrf_token %}
+  <div class="form-group">
+    <label for="cemail">Email address</label>
+    <input type="email" class="form-control" id="cemail" name="cemail" placeholder="name@example.com">
+  </div>
+
+    <div class="form-group">
+    <label for="cname">Name</label>
+    <input type="text" class="form-control" id="cname" name="cname" placeholder="Name">
+  </div>
+
+    <div class="form-group">
+    <label for="croll">Roll no. </label>
+    <input type="text" class="form-control" id="croll" name="croll" placeholder="0000000">
+  </div>
+
+  <div class="form-group">
+    <label for="query">Query</label>
+    <textarea type="text" class="form-control" id="query" name="query" rows="3" placeholder="Write your issue"></textarea>
+  </div>
+    <input class="btn btn-success" type="submit" value="submit"/>
+
+
+</form>
+
+    <br>
+    <br>
+
+    <div class="container" >
+        <br>
+
+        <br>
+    </div>
+
+    <div class="card">
+  <div class="card-header" style="background-color:#B10EC7">
+    <h5>Developer</h5>
+  </div>
+  <div class="card-body" style="background-color:#571561">
+    <div class="row">
+  <div class="col-sm-6">
+    <div class="card" >
+      <div class="card-body">
+        <h5 class="card-title">Atul Keshri</h5>
+        <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+          <div >
+         <a href="#"> <i class="fa fa-facebook-square" style="font-size:48px;color:blue"></i></a>
+          <a href="#"><i class="fa fa-linkedin-square" style="font-size:48px;color:blue"></i></a>
+          <a href="#"><i class="fa fa-instagram" style="font-size:48px;color:blue"></i></a>
+          <a href="#"><i class="material-icons" style="font-size:48px;color:blue;">email</i></i></a>
+         </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card"   >
+      <div class="card-body" >
+        <h5 class="card-title">Sayandeep</h5>
+        <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+         <div >
+         <a href="#"> <i class="fa fa-facebook-square" style="font-size:48px;color:blue"></i></a>
+          <a href="#"><i class="fa fa-linkedin-square" style="font-size:48px;color:blue"></i></a>
+          <a href="#"><i class="fa fa-instagram" style="font-size:48px;color:blue"></i></a>
+          <a href="#"><i class="material-icons" style="font-size:48px;color:blue;">email</i></i></a>
+         </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+  </div>
+</div>
+<br>
+
+</div>
+<!-- FOOTER -->
+<footer  style ="position: fixed;left: 0;bottom: 0;width: 100%;color: white;background-color: red;
+text-align: center;">
+  <p class="float-right" style ="background-color: red"><a href="#">Back to top</a></p>
+  <p>&copy;AK <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+</footer>
+{% endblock %}

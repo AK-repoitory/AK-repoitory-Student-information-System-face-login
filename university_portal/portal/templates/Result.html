@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sky High</title>
+      <style>
+      table {
+        border-collapse: separate;
+        border-spacing: 0 15px;
+      }
+      th {
+        background-color: #4287f5;
+        color: white;
+      }
+      th,
+      td {
+        /*width: 150px;*/
+        text-align: center;
+        /*border: 1px solid black;*/
+        padding: 5px;
+      }
+      h2 {
+        color: #4287f5;
+      }
+    </style>
+  </head>
+  <body style="font-size: 1.2em;">
+    <h1 style="text-align: center;">Sky High Institue of West Bengal</h1>
+    <hr>
+    <h1 >Report Card</h1>
+    <p>The harder you work for something, the greater you'll feel when you achieve it.</p>
+    <table>
+		<tr>
+		<td>
+
+    <table>
+      <tr>
+      <th>Username Name :</th>
+      <td>{{a.username}}</td>
+    </tr>
+    <tr>
+      <th>Roll no:</th>
+      <td>{{a.rollno}}</td>
+    </tr>
+    <tr>
+      <th>Email:</th>
+      <td>{{a.email}}</td>
+    </tr>
+    </table>
+		
+    </td>
+		<td>
+
+      <table  >
+        <tr>
+        <th>Name  : </th>
+        <td>{{a.first_name}} {{a.last_name}} </td>
+        </tr>
+    <tr>
+      <th>Birthday:</th>
+      <td> {{a.birthday}}</td>
+    </tr>
+    <tr>
+      <th>Phone:</th>
+      <td>123-45-678</td>
+    </tr>
+      </table>
+		
+    </td>
+		</tr>
+</table>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<table  class="table table-hover" style="text-align:center;border: 1px solid black;" >
+        <thead>
+          <tr>
+          <th scope="col">Subject </th>
+          <th scope="col">Marks</th>
+      
+          </tr>
+        </thead>
+        <tbody>
+      
+          <tr>
+            <th scope="col">C</th>
+            <td scope="row">{{a.Subject_c}}</td>
+            </tr>
+            <tr>
+            <th scope="col">Networking </th>
+            <td scope="row">{{a.Subject_Networking}}</td>
+            </tr>
+            <tr>
+            <th scope="col">Java</th>
+            <td scope="row">{{a.Subject_java}}</td>
+            </tr>
+            <tr>
+            <th scope="col">Python</th>
+            <td scope="row">{{a.Subject_python}}</td>
+            </tr>
+        </tbody>
+        </table>
+
+        <hr>
+        <p style="text-align:center;"><b>Status</b> : <strong><mark style="background-color:#3cff00">{{a.Qualified}}</p>
+  </body>
+</html>

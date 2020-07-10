@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		res
+	</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body style="background-color:rgb(9, 72, 153)">
+
+
+	  <div class="jumbotron" style="background-color:rgb(9, 72, 153)">
+		<!-- <h1 class="display-4">Hello, {{request.user}}</h1> -->
+		<h1 class="display-4">Report Card</h1>
+		<p class="lead">The harder you work for something, the greater you'll feel when you achieve it.</p>
+		<hr class="my-4">
+		<!-- <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> -->
+		<!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
+		<!-- <div class="d-inline p-2 "> -->
+   
+		  <table style="width:50%; float:left" >
+		<tr>
+		  <th>Username Name :</th>
+		  <td>{{a.username}}</td>
+		</tr>
+		<tr>
+		  <th>Name  : </th>
+		  <td>{{a.first_name}} {{a.last_name}} </td>
+		</tr>
+		<tr>
+		  <th>Roll no:</th>
+		  <td>{{a.rollno}}</td>
+		</tr>
+	  </table>
+   
+		<!-- </div> -->
+		<!-- <div class="d-inline p-2 "> -->
+   
+		  <table  style="width:50%;">
+   
+		<tr>
+		  <th>Email:</th>
+		  <td>{{a.email}}</td>
+		</tr>
+		<tr>
+		  <th>Birthday:</th>
+		  <td> {{a.birthday}}</td>
+		</tr>
+		<tr>
+		  <th>Phone:</th>
+		  <td>123-45-678</td>
+		</tr>
+	  </table>
+   
+		</div>
+		<div class= "container" style = "border-style: inset;background-color:#DB4BE3" >
+			<div class="container">
+		  
+		  
+			  <table  class="table table-hover"  >
+				<thead>
+				  <tr>
+					<th scope="col">Subject </th>
+					<th scope="col">Marks</th>
+		  
+				  </tr>
+				</thead>
+				<tbody>
+		  
+				  <tr>
+						<th scope="col">C</th>
+						<td scope="row">{{a.Subject_c}}</td>
+					  </tr>
+					  <tr>
+						<th scope="col">Networking </th>
+						<td scope="row">{{a.Subject_Networking}}</td>
+					  </tr>
+					  <tr>
+						<th scope="col">Java</th>
+						<td scope="row">{{a.Subject_java}}</td>
+					  </tr>
+					  <tr>
+						<th scope="col">Python</th>
+						<td scope="row">{{a.Subject_python}}</td>
+					  </tr>
+				</tbody>
+			  </table>
+		  
+				</div>
+		  
+		  </div>
+
+	
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
